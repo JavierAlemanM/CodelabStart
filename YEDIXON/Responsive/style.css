@@ -1,0 +1,130 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background-color: rgb(236, 236, 236);
+}
+
+.main {
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+   gap: 10px;
+   height: 100vh;
+}
+
+.section .main {
+   display: flex;
+   gap: 10px;
+}
+
+
+/*Box-Azules*/
+.blue .box {
+   width: 100%;
+   background-color: rgb(24, 143, 240);
+   height: 50px;
+   margin-top: 10px;
+   flex-direction: column;
+}
+
+/*box-yellow*/
+.yellow {
+   width: 100%;
+   height: 120px;
+   background-color: rgb(255, 196, 0);
+   margin-top: 20px;
+}
+
+/*box-green*/
+.green .box {
+   width: 100%;
+   height: 60px;
+   background-color: rgb(10, 151, 57);
+   margin-top: 20px;
+}
+
+/*box-red*/
+.red .box {
+   width: 100%;
+   height: 40px;
+   background-color: brown;
+   margin-top: 10px;
+}
+
+/* Estilos para pantallas medianas (tabletas) */
+@media (min-width: 600px) {
+   .main {
+      flex-direction: column;
+   }
+
+   .blue .box {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      height: 50px;
+   }
+
+   .yellow {
+      margin-top: 10px;
+   }
+
+   .green {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+   }
+
+   .red {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+   }
+
+   .red .box {
+      width: calc(50% - 5px);
+   }
+}
+
+/* Estilos para pantallas grandes (desktops) */
+@media (min-width: 1024px) {
+   .main {
+      flex-direction: column;
+   }
+
+   .blue {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+   }
+
+   .blue .box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 100px;
+   }
+
+   .yellow {
+      height: 230px;
+   }
+
+   .green {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+   }
+
+   .red {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .red .box {
+      width: calc(25% - 10px);
+      height: 100px;
+   }
+}
