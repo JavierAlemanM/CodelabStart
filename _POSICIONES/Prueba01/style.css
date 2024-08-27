@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #a1d0fe, #145979, #b0c4cc, #474787);
+	background-size: 400% 400%;
+	animation: waterAnimation 15s ease infinite;
+    
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.main{
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    background-color: rgba(255,255,255,0.2);
+}
+
+@keyframes waterAnimation {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+  }
+
+  .img_rana{
+    width: 100px;
+    height: 100px;
+  }
+  .img_rana img{
+    width: 100%;
+  }
+  .img_hoja{
+    width: 150px;
+    height: 150px;
+  }
+  .img_hoja img{
+    width: 100%;
+  }
+
+
+  .rana{
+
+  }
+
+  .hoja{
+
+  }
