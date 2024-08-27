@@ -1,0 +1,178 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+body {
+   width: 100%;
+   min-height: 100vh;
+   position: relative;
+}
+
+.main {
+   width: 100%;
+   height: 100vh;
+   background-color: rgb(9, 9, 40);
+   position: relative;
+}
+
+/*Circulos de Fondo*/
+.circle {
+   width: 600px;
+   height: 600px;
+   border-radius: 50%;
+   border: 80px solid #030b1d;
+}
+
+.circle-1 {
+   background-color: transparent;
+   position: fixed;
+   right: -300px;
+   bottom: -300px;
+}
+
+.circle-2 {
+   background-color: transparent;
+   position: absolute;
+   top: -300px;
+   left: -300px;
+}
+
+/*Boton de claro oscuro*/
+.button button {
+   right: 0;
+   position: absolute;
+   margin: 20px;
+
+}
+
+/*Primer Contenedor*/
+.container {
+   width: 100%;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+}
+
+.section {
+   margin: 70px 20px;
+   text-align: center;
+}
+
+.section h1 {
+   font-size: 40px;
+   font-weight: 100;
+}
+
+.section span {
+   font-size: 40px;
+   font-weight: bold;
+}
+
+.section p {
+   font-weight: 100;
+   margin-top: 20px;
+}
+
+
+/*Segundo Contenedor*/
+.items {
+   background-color: #1b2e44;
+   padding: 10px;
+   border-radius: 10px;
+   width: 400px;
+   margin-bottom: 20px;
+}
+
+.items {
+   display: flex;
+}
+
+
+.items img {
+   width: 60px;
+   height: 60px;
+   border-radius: 10px;
+}
+
+.items span {
+   font-size: 20px;
+   text-align: center;
+   margin: 20px 20px;
+}
+
+/*Tama;o para tables*/
+@media screen and (min-width: 760px) and (max-width: 1020px) {
+
+   /*Titulos*/
+   .section h1 {
+      font-size: 55px;
+      font-weight: 100;
+   }
+
+   /*Contenedores*/
+   .items {
+      width: 600px;
+   }
+
+   .items {
+      display: flex;
+   }
+
+   /*Circulos de fondos*/
+   .circle {
+      width: 700px;
+      height: 700px;
+   }
+
+}
+
+/*Tama;o para PC*/
+@media screen and (min-width: 1020px) {
+
+   .circle {
+      width: 800px;
+      height: 800px;
+      border-radius: 50%;
+      border: 100px solid #030b1d;
+   }
+
+   .container {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      margin-top: 150px;
+   }
+
+   .section {
+      margin-right: 200px;
+      margin-top: 0;
+   }
+
+   .section h1 {
+      font-size: 54px;
+      font-weight: 100;
+      margin-top: -150px;
+   }
+
+   .section span {
+      font-size: 50px;
+      font-weight: bold;
+   }
+
+   .section p {
+      font-weight: 100;
+      margin-top: 60px;
+   }
+
+   /*Segundo Contenedor*/
+   .items {
+      width: 700px;
+   }
+
+}
