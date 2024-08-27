@@ -48,12 +48,14 @@ align-items: center;
   .img_hoja img{
     width: 100%;
   }
-
+  .hoja{
+    position: absolute;
+    left: 34rem;
+    bottom: 12rem;
+  }
 
   .rana{
-
+    position: absolute;
   }
 
-  .hoja{
-
-  }
+  
