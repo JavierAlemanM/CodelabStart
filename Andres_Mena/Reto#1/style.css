@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #383c54;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.main .head {
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    padding-right: 40px;
+}
+
+.main .head .slider {
+    margin-top: auto;
+    height: 30px;
+    width: 60px;
+    background-color: slateblue;
+    border-radius: 20px;
+}
+
+.main .head .slider .button {
+    background-color: white;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.main .father {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.main .father .section {
+    display: flex;
+    gap: 10px;
+
+}
+
+.main .welcome {
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+}
+
+.main .welcome .box {
+
+    color: white;
+    font-size: 270%;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.main .welcome .span {
+    color: #c0c3cb;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.main .info-box {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main .info-box .box {
+    height: 50px;
+    background-color: #404c64;
+    border-radius: 10px;
+    color: white;
+    padding-left: 60px;
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+/* .main .info-box .box .icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+} */
+
+@media(min-width: 800px) {
+    .main .father {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+    }
+
+    .main .info-box {
+        width: 50%;
+    }
+
+    .main .welcome {
+        padding-left: 40px;
+        justify-content: start;
+    }
+
+    .main .welcome .box {
+
+        color: white;
+        font-size: 230%;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    .main .info-box .box {
+        height: 70px;
+        padding-top: 22.5px;
+    }
+}
+
+@media(min-width:960px) {
+    .main .father {
+        gap: 150px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main .welcome .box {
+
+        color: white;
+        font-size: 260%;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    .main .head {
+        padding-right: 180px;
+    }
+
+    .main .info-box {
+        padding: 80px;
+        padding-top: 30px;
+    }
+
+    .main .father .section {
+        gap: 20px;
+
+    }
+}
