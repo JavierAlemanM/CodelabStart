@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.main{
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(202, 202, 202);
+    position: relative;
+}
+
+.cuadro{
+    width: 200px;
+    height: 200px;
+    background-color: #dfdfdf;
+}
+
+.circulo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.circulo1{
+    background-color:dodgerblue ;
+    position: absolute;
+    right: 0;
+}
+
+.circulo2{
+    background-color: rgb(239, 235, 168) ;
+    position: absolute;
+    bottom: 0;
+}
+
+.cuadro1{
+    background-color: #e89393;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.cuadro2{
+    background-color: #a293f4;
+    position: absolute;
+}
+
+button{
+    background-color: silver;
+    position: fixed;
+    top: 50px;
+    z-index: 30;
+    right: 50px;
+}
