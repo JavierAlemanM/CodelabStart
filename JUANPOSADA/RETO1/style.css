@@ -2,86 +2,141 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #383c54;
+    font-family: Arial;
 }
 
-.main{
+.body{
+    width: 100%;
+    height: 100vh;
+    background-color:  #383c54 ;
     display: flex;
-    flex-direction: column;
-}
-
-.main .header{
-    height: 80px;
-    display: flex;
-    justify-content: end;
-    padding-right: 40px;
-
-}
-
-.main .header .slider{
-    margin-top: auto;
-    height: 30px;
-    width: 60px;
-    background-color: slateblue;
-    border-radius: 20px;
-}
-
-.main .header .slider .button{
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-    border-radius: 100%;
-    background-color: white;
-}
-
-.main .father{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-}
-
-.main .father .section{
-    display: flex;
-    gap: 10px;
-}
-
-.main .section{
-    flex-direction: column;
-    padding: 20px;
     justify-content: center;
-    z-index: 10;
-    background-color: transparent;
-}
-
-.main .section .box{
-    color: white;
-    font-size: 270%;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: transparent;
-}
-
-.box .ms2{
-    background-color: transparent;
-    font-size: medium;
-    padding-top: 20px;
-}
-
-.main .aside{
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-}
-
-.main .aside .box1{
-    height: 50px;
-    background-color: #404c64;
-    border-radius: 10px;
-    color: white;
-    padding-left: 60px;
-    padding-top: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
     position: relative;
 }
 
+.body .circulo{
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 80px solid #2c3949;
+}
+
+.body .circulo1{
+    position: absolute;
+    left: -300px;
+    top: -300px;
+}
+
+.body .circulo2{
+    right: -300px;
+    bottom: -300px;
+}
+
+.main{
+    max-width: 660px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    z-index: 10;
+}
+
+.main .header{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.slider{
+    width: 40px; 
+    height: 20px;
+    background-color: slateblue;
+    border-radius: 10px;
+    position: relative;
+}
+
+.slider-button{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+
+.main .section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.section .content-title{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.main .section .box{
+    font-size: 40px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #fff;
+}
+
+.section .box .ms{
+    font-weight: 400;
+}
+
+.section .box .ms1{
+    font-weight: 600;
+}
+
+.section .ms2{
+    font-style: italic;
+    color: #fff;
+}
+
+.section .content-card{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-card .card {
+    background-color: #3c4d65;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 8px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    gap: 16px;
+}
+
+.content-card .card .icon{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+@media (min-width: 640px) {
+    .main .section{
+        flex-direction: row;
+        gap: 80px;
+    }
+}
