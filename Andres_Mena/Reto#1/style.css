@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #383c54;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main .circulo {
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+}
+
+.main .circulo1 {
+    background-color: transparent;
+    position: fixed;
+    right: -120px;
+    bottom: -120px;
+    border: 95px solid #262831;
+
+
+}
+
+.main .circulo2 {
+    background-color: transparent;
+    position: absolute;
+    left: -150px;
+    top: -150px;
+    border: 95px solid #262831;
+
+
+
+}
+
+.main .head {
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    padding-right: 80px;
+    z-index: 20;
+    background-color: transparent;
+
+
+}
+
+.main .head .slider {
+    margin-top: auto;
+    height: 30px;
+    width: 60px;
+    background-color: slateblue;
+    border-radius: 20px;
+}
+
+.main .head .slider .button {
+    background-color: white;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.main .father {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.main .father .section {
+    display: flex;
+    gap: 10px;
+
+}
+
+.main .welcome {
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    z-index: 10;
+    background-color: transparent;
+
+}
+
+
+.main .welcome .box {
+
+    color: white;
+    font-size: 270%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+
+}
+
+.box span {
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.box .span2 {
+    background-color: transparent;
+    font-size: medium;
+    padding-top: 20px;
+}
+
+.main .welcome .span {
+    color: #c0c3cb;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.main .info-box {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.main .info-box .box {
+    height: 50px;
+    background-color: #404c64;
+    border-radius: 10px;
+    color: white;
+    padding-left: 60px;
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+
+
+}
+
+.main .info-box .box .icon {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 10px;
+    top: 8px;
+    background-color: #404c64;
+}
+
+.icon-mood {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+}
+
+.dia {
+    position: absolute;
+    right: 150px;
+    top: 50px;
+    background-color: transparent;
+}
+
+.noche {
+    position: absolute;
+    right: 40px;
+    top: 50px;
+}
+
+
+
+
+
+@media(min-width: 800px) {
+    .main .circulo1 {
+        right: -160px;
+    }
+
+    .main .circulo2 {
+        left: -160px;
+    }
+
+    .main .circulo {
+        width: 520px;
+        height: 520px;
+        border-radius: 50%;
+    }
+
+    .main .info-box .box .icon {
+        top: 15px;
+    }
+
+    .main .father {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+    }
+
+    .main .info-box {
+        width: 50%;
+    }
+
+    .main .welcome {
+        padding-left: 40px;
+        justify-content: start;
+    }
+
+    .main .welcome .box {
+
+        color: white;
+        font-size: 230%;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    .main .info-box .box {
+        height: 70px;
+        padding-top: 22.5px;
+    }
+}
+
+@media(min-width:960px) {
+
+
+    .dia {
+        right: 285px;
+    }
+
+    .noche {
+        right: 185px;
+    }
+
+    .main .father {
+        gap: 150px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main .welcome .box {
+
+        color: white;
+        font-size: 260%;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    .main .head {
+        padding-right: 220px;
+    }
+
+    .main .info-box {
+        padding: 80px;
+        padding-top: 30px;
+    }
+
+    .main .father .section {
+        gap: 20px;
+
+    }
+}
