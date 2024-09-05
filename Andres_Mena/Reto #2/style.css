@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 350px;
+}
+
+.body .main {
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: white;
+}
+
+.main .section1 {
+    background-color: #4233f0;
+    width: 270px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    gap: 30px;
+    background: linear-gradient(#6544fe, #362ed3);
+    color: white;
+}
+
+.main .section1 .title1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section1 .circle {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: linear-gradient(#362ed3, #6544fe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 .circle .info-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle .info-circle .info1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.info-section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.info-section1 .title-description {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.info-section1 .description {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.main .section2 {
+    width: 270px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+
+}
+
+.section2 .contet-title {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.section2 .contet-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section2 .contet-cards .card {
+    width: 100%;
+    height: 42px;
+    justify-content: space-between;
+    display: flex;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.info-card .info1 {
+    font-weight: 600;
+}
+
+.contet-cards .card-reaction {
+    background-color: rgb(247, 230, 230);
+}
+
+.contet-cards .card-reaction .type-card {
+    color: rgb(255, 0, 0);
+    font-weight: 200;
+}
+
+.contet-cards .card-memory {
+    background-color: rgba(251, 251, 218);
+}
+
+.contet-cards .card-memory .type-card {
+    color: rgb(214, 214, 0);
+    font-weight: 200;
+}
+
+.contet-cards .card-verbal {
+    background-color: rgba(210, 255, 210);
+}
+
+.contet-cards .card-verbal .type-card {
+    color: green;
+    font-weight: 200;
+}
+
+.contet-cards .card-visual {
+    background-color: rgba(223, 223, 255);
+}
+
+.contet-cards .card-visual .type-card {
+    color: blue;
+    font-weight: 200;
+}
+
+.btn {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #3135cb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    .body {
+        height: 100vh;
+        padding-bottom: 0;
+    }
+
+    .body .main {
+        flex-direction: row;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+    }
+
+    .main .section2 {
+        border-top-right-radius: 20px;
+    }
+}
