@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.section_1{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_1 .form{
+    width: 400px;
+    background-color: rgb(252, 248, 248);
+    display: flex;
+    flex-direction: column;
+}
+.content-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.brand{
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(37, 124, 246);
+}
+
+.content-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.title-1{
+    font-size: 32px;
+    font-weight: bold;
+}
+.title-2{
+    color: rgb(198, 198, 198);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content-buttom{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+
+}
+
+.btn{
+    width: 100%;
+    height: 60px;
+    background-color: hsl(0, 0%, 100%);
+    color: #000000;
+    border: 2px solid rgb(194, 194, 194);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;/*botones cursor*/
+    transition: background-color 0.5s;
+}
+
+.btn:hover{
+    background-color: rgb(190, 190, 190);
+}
+
+.separator{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    z-index: 10;
+    background-color: #ffff;
+    bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.line{
+    background-color: rgb(164, 164, 164);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 8px;
+}
+.content-2{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content-input{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.content-input input{
+    height: 46px;
+    padding-left: 8px;
+    background-color: rgb(234, 234, 234);
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid rgb(194, 194, 194);
+    
+}
+
+.info-input{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox input{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+}
+
+.info-input span{
+    color: rgb(208, 208, 208);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.forgot-pass{
+    color: blue;
+}
+
+.btn-login{
+    width: 100%;
+    background-color: rgb(56, 56, 255);
+    height: 50px;
+    color: #ffffff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.create-account{
+   justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+.create-account a{
+    outline: none;
+    text-decoration: none;
+    color: rgb(56, 56, 255);
+
+}
+
+.section_2{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(56, 56, 255);
+}
