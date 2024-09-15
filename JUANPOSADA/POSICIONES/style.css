@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.main{
+    width: 1000px;
+    height: 600px;
+    background-color: blanchedalmond;
+    position: relative;
+}
+
+.cuadro{
+    width: 150px;
+    height: 150px;
+}
+
+.circulo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+.circulo1{
+    background-color: green;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.circulo2{
+    background-color: blue;
+    position: absolute;
+    right: 0;
+    
+}
+
+.cuadro1{
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.cuadro2{
+    background-color: orange;
+    position: absolute;
+}
+
+button{
+    background-color: silver;
+    position: fixed;
+    right: 0px;
+    top: 50px;
+    z-index: 30;
+}
