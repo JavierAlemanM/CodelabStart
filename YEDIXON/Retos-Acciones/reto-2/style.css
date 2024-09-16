@@ -199,6 +199,10 @@ label {
    border-bottom: 2px solid #d8d8d8;
 }
 
+.form input:focus {
+   border-bottom: 2px solid #48a2be;
+}
+
 .vaid-form {
    display: flex;
    justify-content: space-between;

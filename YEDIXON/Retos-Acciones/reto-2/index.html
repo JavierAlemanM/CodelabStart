@@ -83,38 +83,41 @@
 
 
    <script>
-        const nameInput = document.getElementById('name-card-input');
-        const numberInput = document.getElementById('number-card-input');
-        const expirationInput = document.getElementById('valid-through');
+      
+      const nameInput = document.getElementById('name-card-input');
+      const numberInput = document.getElementById('number-card-input');
+      const expirationInput = document.getElementById('valid-through');
 
         // Selección de elementos de la tarjeta
-        const nameCard = document.getElementById('name-card');
-        const card1 = document.getElementById('card-1');
-        const card2 = document.getElementById('card-2');
-        const card3 = document.getElementById('card-3');
-        const card4 = document.getElementById('card-4');
-        const dateCard = document.getElementById('date-card');
+      const nameCard = document.getElementById('name-card');
+      const card1 = document.getElementById('card-1');
+      const card2 = document.getElementById('card-2');
+      const card3 = document.getElementById('card-3');
+      const card4 = document.getElementById('card-4');
+      const dateCard = document.getElementById('date-card');
 
         // Funcion para actualizar los datos de la tarjeta
-        function updateCard() {
+      function updateCard() {
             // Actualiza el nombre en la tarjeta
-            nameCard.textContent = nameInput.value || '';
+         nameCard.textContent = nameInput.value || '';
 
             // Formatea el numero de tarjeta y actualiza los bloques
-            const cardValue = numberInput.value.replace(/\D/g, ''); // Elimina caracteres no numéricos
-            card1.textContent = cardValue.slice(0, 4);
-            card2.textContent = cardValue.slice(4, 8);
-            card3.textContent = cardValue.slice(8, 12);
-            card4.textContent = cardValue.slice(12, 16);
+         const cardValue = numberInput.value.replace(/\D/g, ''); // Elimina caracteres no numéricos
+         card1.textContent = cardValue.slice(0, 4);
+         card2.textContent = cardValue.slice(4, 8);
+         card3.textContent = cardValue.slice(8, 12);
+         card4.textContent = cardValue.slice(12, 16);
 
             // Actualiza la fecha en la tarjeta
-            dateCard.textContent = expirationInput.value || 'MM/YY';
+         dateCard.textContent = expirationInput.value || 'MM/YY';
         }
 
         // Escucha cambios en los inputs y actualiza la tarjeta
-        nameInput.addEventListener('input', updateCard);
-        numberInput.addEventListener('input', updateCard);
-        expirationInput.addEventListener('input', updateCard);
+      nameInput.addEventListener('input', updateCard);
+      numberInput.addEventListener('input', updateCard);
+      expirationInput.addEventListener('input', updateCard);
+
     </script>
+
 </body>
 </html>
