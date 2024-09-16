@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reto Acciones 2</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="body">
 
         <div class="header">
             <div class="headerOption">YOUR ORDER</div>
             <div class="headerOption">SHIPPING DETAILS</div>
-            <div class="headerOption">PAYMENT DETAILS</div>
+            <div class="headerOption active">PAYMENT DETAILS</div>
             <div class="headerOption">CONFIRMATION</div>
         </div>
         <div class="main">
@@ -26,26 +28,55 @@
                             <div class="chip"></div>
                         </div>
                         <div class="numberCard">
-                            <div class="">1456</div>
-                            <div class="">1298</div>
-                            <div class="">6574</div>
-                            <div class="">1287</div>
+                            <div class="" id="cardNumber">#### #### #### ####</div>
                         </div>
                         <div class="personalInfo">
-                            <div class="nameOwner">JACK SPARROW</div>
-                            <div class="expedition">02/22</div>
+                            <div id="cardOwner" class="nameOwner">NOMBRE TITULAR</div>
+                            <div id="cardExpiry" class="expedition">MM/AA</div>
                         </div>
                     </div>
                     <div class="contentPrevious">
+                        <img class="back" src="/SebastianDevp/Reto-5/images/back-arrow.png" alt="Previous Arrow">
                         <div class="previous">Previous Step</div>
                     </div>
                 </div>
+                
             </div>
             <div class="section-2">
-
+                <div class="header-form">Payment Details</div>
+                <div class="form">
+                    <div class="contentInput">
+                        <div class="title">Name on Card</div>
+                        <input type="text" id="inputCardOwner" oninput="updateCardOwner()" maxlength="16s">
+                    </div>
+                    <div class="contentInput">
+                        <div class="title">Card Number</div>
+                        <input type="text" id="inputCardNumber" oninput="updateCardNumber()" maxlength="19">
+                    </div>
+                    <div class="contentValidation">
+                        <div class="contentInput">
+                            <div class="title">valid Through</div>
+                            <input type="text" id="inputCardExpiry" oninput="updateCardExpiry()" maxlength="5">
+                        </div>
+                        <div class="contentInput">
+                            <div class="title">CVV</div>
+                            <div class="contenCvv">
+                                <input type="text" maxlength="3">
+                                <img src="/SebastianDevp//Reto-5/images/interrogation.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentButton">
+                    PAY
+                    <span>$450.00</span>
+                </div>
             </div>
         </div>
 
     </div>
+
+    <script src="/SebastianDevp/Reto-5/script.js"></script>
 </body>
+
 </html>
