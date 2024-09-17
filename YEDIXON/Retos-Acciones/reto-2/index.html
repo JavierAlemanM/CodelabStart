@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+   <title>Checkout</title>
+</head>
+<body>
+   <div class="body">
+      <div class="main">
+         <div class="header">
+            <div class="nav nav-1">Your Order</div>
+            <div class="nav nav-2">Shipping Details</div>
+            <div class="nav nav-3">Payment Details</div>
+            <div class="nav nav-4">Confirmation</div>
+         </div>
+         <div class="section">
+            <div class="section-1">
+               <div class="content-card">
+                  <div class="content-title">
+                     <div class="title-card">Visa</div>
+                  </div>
+                  <div class="content-chip">
+                     <div class="chip-card">
+                        <img src="chips.PNG" alt="">
+                     </div>
+                  </div>
+                  <div class="number-card">
+                     <div class="card" id="card-1">1456</div>
+                     <div class="card" id="card-2">1298</div>
+                     <div class="card" id="card-3">6574</div>
+                     <div class="card" id="card-4">1287</div>
+                  </div>
+                  <div class="info-card">
+                     <div class="name" id="name-card">Jack Sparrow</div>
+                     <div class="date" id="date-card">02/22</div>
+                  </div>
+               </div>
+               <div class="previous">
+                  <div class="info-previous">
+                     <div class="icon-previous">
+                        <i class="fa-solid fa-arrow-left"></i>   
+                     </div>
+                     <div class="btn-previous">Previous Step</div>
+                  </div>
+               </div>
+            </div>
+            <div class="section-2">
+               <div class="content-form">
+                  <div class="title-form">Payment Details</div>
+                  <div class="form">
+                     <div class="form name-form">
+                        <label for="">Name on Card</label>
+                        <input type="text" id="name-card-input" placeholder="Jack Sparrow">   
+                     </div>
+                     <div class="form number-form">
+                        <label for="">Card Number</label>
+                        <input type="number" id="number-card-input" placeholder="1456 1298 6574 1287">
+                     </div>
+                     <div class="vaid-form">
+                        <div class="data-form">
+                           <label for="">Valid Through</label>
+                           <input type="text" id="valid-through" placeholder="MM/YY">
+                        </div>
+                        <div class="cvv-form">
+                           <label for="">CVV</label>
+                           <input type="number">
+                        </div>
+                     </div>
+                     <div class="btn-form">
+                        <div class="btn-pay">
+                           Pay <span>$450.00</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>   
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <script>
+      
+      const nameInput = document.getElementById('name-card-input');
+      const numberInput = document.getElementById('number-card-input');
+      const expirationInput = document.getElementById('valid-through');
+
+        // Selección de elementos de la tarjeta
+      const nameCard = document.getElementById('name-card');
+      const card1 = document.getElementById('card-1');
+      const card2 = document.getElementById('card-2');
+      const card3 = document.getElementById('card-3');
+      const card4 = document.getElementById('card-4');
+      const dateCard = document.getElementById('date-card');
+
+        // Funcion para actualizar los datos de la tarjeta
+      function updateCard() {
+            // Actualiza el nombre en la tarjeta
+         nameCard.textContent = nameInput.value || '';
+
+            // Formatea el numero de tarjeta y actualiza los bloques
+         const cardValue = numberInput.value.replace(/\D/g, ''); // Elimina caracteres no numéricos
+         card1.textContent = cardValue.slice(0, 4);
+         card2.textContent = cardValue.slice(4, 8);
+         card3.textContent = cardValue.slice(8, 12);
+         card4.textContent = cardValue.slice(12, 16);
+
+            // Actualiza la fecha en la tarjeta
+         dateCard.textContent = expirationInput.value || 'MM/YY';
+        }
+
+        // Escucha cambios en los inputs y actualiza la tarjeta
+      nameInput.addEventListener('input', updateCard);
+      numberInput.addEventListener('input', updateCard);
+      expirationInput.addEventListener('input', updateCard);
+
+    </script>
+
+</body>
+</html>

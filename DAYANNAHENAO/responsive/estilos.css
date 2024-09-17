@@ -17,9 +17,9 @@
     display: flex;
     gap: 20px;
 }
+
 .main .blue{
     flex-direction: column;
-   
 }
 
 .main .blue .box{

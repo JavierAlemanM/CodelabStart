@@ -9,21 +9,39 @@ body {
    width: 100%;
    min-height: 100vh;
    position: relative;
+
+   /* Estilos modo oscuro */
+   --background-day: #6f747d;
+   --background-night: rgb(9, 9, 40);
+
+   --circle-border-day: #5b5b5d;
+   --circle-border-night: #030b1d;
+
+   --container-color-day: #000000;
+   --container-color-night: #ffffff;
+
+   --container-color: var(--container-color-day);
+   --circle-border: var(--circle-border-day);
+   --value: var(--background-day);
+
+   background-color: var(--value);
+   transition: background-color 2s, color 2s, border 2s;
+
 }
 
 .main {
    width: 100%;
    height: 100vh;
-   background-color: rgb(9, 9, 40);
    position: relative;
 }
 
-/*Circulos de Fondo*/
+/* Circulos de Fondo */
 .circle {
    width: 600px;
    height: 600px;
    border-radius: 50%;
-   border: 80px solid #030b1d;
+   border: 80px solid var(--circle-border);
+   /* Aplica el color del borde aquí */
 }
 
 .circle-1 {
@@ -41,22 +59,71 @@ body {
 }
 
 /*Boton de claro oscuro*/
-.button button {
-   right: 0;
-   position: absolute;
-   margin: 20px;
 
+.btn-switch {
+   display: none;
+}
+
+.switch-label {
+   width: 60px;
+   height: 30px;
+   background-color: #6a0dad;
+   /* Color del fondo del interruptor */
+   border-radius: 25px;
+   position: absolute;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   right: 0;
+   margin: 30px 60px;
+}
+
+.switch-label:before {
+   content: "";
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   background-color: white;
+   /* Color del círculo */
+   border-radius: 50%;
+   top: 50%;
+   left: 5px;
+   transform: translateY(-50%);
+   transition: left 0.3s;
+}
+
+.btn-switch:checked+.switch-label:before {
+   left: calc(100% - 25px);
+   /* Mueve el círculo a la derecha */
+}
+
+/* Iconos opcionales al lado del interruptor */
+.switch-label:after {
+   content: "🌙";
+   position: absolute;
+   right: -30px;
+   top: 45%;
+   transform: translateY(-50%);
+   font-size: 20px;
+   margin: 0 -10px;
+}
+
+.btn-switch:not(:checked)+.switch-label:after {
+   content: "☀️";
+   left: -30px;
+   right: auto;
 }
 
 /*Primer Contenedor*/
 .container {
+   color: var(--container-color);
    width: 100%;
-   color: #fff;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    position: absolute;
+   transition: color 2s;
+   /* Para que la transición sea suave */
 }
 
 .section {
@@ -82,17 +149,20 @@ body {
 
 /*Segundo Contenedor*/
 .items {
-   background-color: #1b2e44;
+   background-color: transparent;
    padding: 10px;
    border-radius: 10px;
    width: 400px;
    margin-bottom: 20px;
-}
-
-.items {
    display: flex;
+   box-shadow: 0 0 15px 0 #3f414e;
+   transition-duration: 0.5s;
+   transition-property: background-color;
 }
 
+.items:hover {
+   background-color: rgba(0, 0, 0, 0.3);
+}
 
 .items img {
    width: 60px;
@@ -100,11 +170,14 @@ body {
    border-radius: 10px;
 }
 
+
 .items span {
    font-size: 20px;
    text-align: center;
    margin: 20px 20px;
+   font-weight: bold;
 }
+
 
 /*Tama;o para tables*/
 @media screen and (min-width: 760px) and (max-width: 1020px) {
@@ -112,7 +185,6 @@ body {
    /*Titulos*/
    .section h1 {
       font-size: 55px;
-      font-weight: 100;
    }
 
    /*Contenedores*/
@@ -138,8 +210,6 @@ body {
    .circle {
       width: 800px;
       height: 800px;
-      border-radius: 50%;
-      border: 100px solid #030b1d;
    }
 
    .container {
@@ -151,22 +221,18 @@ body {
 
    .section {
       margin-right: 200px;
-      margin-top: 0;
    }
 
    .section h1 {
       font-size: 54px;
-      font-weight: 100;
       margin-top: -150px;
    }
 
    .section span {
       font-size: 50px;
-      font-weight: bold;
    }
 
    .section p {
-      font-weight: 100;
       margin-top: 60px;
    }
 

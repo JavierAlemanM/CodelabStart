@@ -1,0 +1,518 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial;
+}
+
+.body {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: row;
+}
+
+.section_1 {
+   width: 100%;
+   height: 100%;
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.section_1 .form {
+   width: 400px;
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   flex-direction: column;
+}
+
+.content-1 {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+
+.header {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+
+.brand {
+   font-size: 28px;
+   font-weight: bold;
+   color: rgb(12, 113, 254);
+}
+
+.content-title {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.title-1 {
+   font-size: 32px;
+   font-weight: bold;
+}
+
+.title-2 {
+   font-size: 16px;
+   color: gray;
+   font-weight: 600;
+}
+
+.content-buttom {
+   width: 100%;
+   display: flex;
+   gap: 15px;
+}
+
+.btn {
+   width: 100%;
+   height: 60px;
+   color: #000;
+   background-color: #ffffff;
+   border: 1px solid rgb(205, 205, 205);
+   border-radius: 8px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 600;
+   cursor: pointer;
+   transition: background-color 0.5s, color 0.5s;
+}
+
+.btn:hover {
+   background-color: #424cfc;
+   color: #fff;
+}
+
+.separator {
+   width: 100%;
+   position: relative;
+   display: flex;
+   justify-content: center;
+
+}
+
+.text {
+   z-index: 10;
+   background-color: #ffffff;
+   padding-left: 10px;
+   padding-right: 10px;
+   color: #4a4a4a;
+   font-weight: 600;
+}
+
+.line {
+   width: 100%;
+   height: 1px;
+   background-color: #a2a2a2;
+   position: absolute;
+   top: 8px;
+}
+
+.content-2 {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+
+.content-input {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   padding-top: 20px;
+}
+
+.content-input input {
+   height: 46px;
+   padding-left: 8px;
+   background-color: #f8f8f8;
+   font-size: 18px;
+   border-radius: 10px;
+   outline: none;
+   border: 1px solid #a2a2a2;
+}
+
+.info-input {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+
+.content-input input:focus {
+   border-color: #006ee3;
+}
+
+.checkbox {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.checkbox input {
+   width: 20px;
+   height: 20px;
+}
+
+.info-input span {
+   color: #a2a2a2;
+   font-weight: 600;
+   font-size: 14px;
+
+}
+
+.forgot-pass {
+   color: blue;
+   cursor: pointer;
+}
+
+.btn-login {
+   width: 100%;
+   background-color: rgb(56, 56, 255);
+   height: 50px;
+   color: #ffffff;
+   font-size: 24px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: background-color 0.5s;
+}
+
+.btn-login:hover {
+   background-color: rgb(60, 129, 225);
+}
+
+.create-account {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+
+.create-account a {
+   text-decoration: none;
+   color: blue;
+
+}
+
+.section_2 {
+   width: 100%;
+   height: 100%;
+   background-color: #065ad8;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+}
+
+.section_2 .circle_1 {
+   width: 500px;
+   height: 500px;
+   background: linear-gradient(#0976e9, #065ad8);
+   background-color: #0870e0;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.section_2 .circle_1 .circle_2 {
+   width: 370px;
+   height: 370px;
+   background-color: #0861e6;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   border: 3px solid #9f9f9f;
+}
+
+.circle_2 .cuadro {
+   width: 250px;
+   height: 270px;
+   background-color: #fff;
+   border-radius: 13px;
+   position: absolute;
+   left: 55%;
+}
+
+.circle_2 .ramas {
+   width: 150px;
+   height: 270px;
+   background: linear-gradient(to right, #065ad8, #4187e4);
+   border-radius: 60% 20px 20px 60%;
+   position: absolute;
+   left: 10px;
+}
+
+.rectangulo1 {
+   width: 125px;
+   height: 90px;
+   background: linear-gradient(to right, #065ad8, #0773e1);
+   position: absolute;
+   left: 10px;
+   top: 80px;
+   border-radius: 65% 10px 10px 0px;
+}
+
+.rectangulo2 {
+   width: 125px;
+   height: 90px;
+   background: linear-gradient(to right, #065ad8, #0773e1);
+   position: absolute;
+   left: 10px;
+   bottom: 80px;
+   border-radius: 0px 10px 10px 65%;
+}
+
+.circle_3 {
+   position: absolute;
+   width: 85px;
+   height: 85px;
+   border-radius: 50%;
+   background-color: #4a8fd0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.cicle-img {
+   width: 65px;
+   height: 65px;
+   background-color: #ffffff;
+   border-radius: 50%;
+}
+
+.red_1 {
+   left: 0px;
+   top: 20px;
+}
+
+.red_2 {
+   left: -50px;
+   top: 140px;
+
+}
+
+.red_3 {
+   bottom: 14px;
+   left: 0px;
+}
+
+.header-form {
+   width: 100%;
+   height: 30px;
+   background-color: #ffffff;
+   border-radius: 10px 10px 0 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.puntos {
+   display: flex;
+   align-items: center;
+}
+
+.punto {
+   width: 12px;
+   height: 12px;
+   background-color: #006ee3;
+   border-radius: 50%;
+   display: flex;
+   margin: 8px 5px;
+}
+
+.red {
+   background-color: rgb(250, 59, 59);
+}
+
+.yellow {
+   background: rgb(255, 255, 23);
+}
+
+.green {
+   background-color: rgb(17, 220, 17);
+}
+
+.barra {
+   width: 100px;
+   height: 8px;
+   border-radius: 20px;
+   margin-right: 15px;
+   background-color: #c8c8c8;
+}
+
+.section-form {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   align-items: center;
+}
+
+.sub-header {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.bar {
+   width: 80px;
+   height: 8px;
+   border-radius: 10px;
+}
+
+.barra-1 {
+   margin-top: 10px;
+   width: 120px;
+   height: 20px;
+   background-color: rgba(193, 193, 193, 0.3);
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 20px;
+}
+
+.bar-1 {
+   width: 80px;
+   height: 7px;
+   background-color: #b9b9b9;
+}
+
+.barra-2 {
+   margin-top: 10px;
+   background-color: #bdbdbd;
+}
+
+.info-form {
+   margin-top: 5px;
+   width: 220px;
+   height: 50px;
+   background-color: #ffffff;
+   border: 1px solid #dfdfdf;
+   border-radius: 5px;
+   align-content: center;
+   display: flex;
+   align-items: center;
+}
+
+.user img {
+   width: 30px;
+   background-color: #eaeaea;
+   border-radius: 50%;
+   margin: 10px;
+}
+
+.info-user {
+   display: flex;
+}
+
+.info-user-1 {
+   width: 100px;
+   height: 7px;
+   background-color: #8a8a8a;
+   border-radius: 10px;
+   margin-bottom: 5px;
+}
+
+.info-user-2 {
+   width: 70px;
+   height: 7px;
+   background-color: #bebebe;
+   border-radius: 10px;
+}
+
+.info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.title {
+   font-size: 24px;
+   font-weight: 600;
+   color: #ffffff;
+}
+
+.sub-title {
+   color: #cdcdcd;
+   margin-top: 10px;
+}
+
+.next-info {
+   width: 100%;
+   display: flex;
+   gap: 15px;
+   justify-content: center;
+}
+
+.next {
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   margin-top: 20px;
+}
+
+.next-1 {
+   background-color: #ffffff;
+}
+
+.next-2 {
+   background-color: #006ee3;
+}
+
+.next-3 {
+   background-color: #006ee3;
+}
+
+.footer {
+   margin-bottom: 20px;
+}
+
+.title-footer {
+   color: #fff;
+   font-weight: 600;
+   font-size: 24px;
+   text-align: center;
+}
+
+.p-footer {
+   color: #fff;
+   text-align: center;
+}
+
+.footer {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+}
+
+.nav-footer {
+   width: 8px;
+   height: 8px;
+   background-color: #000;
+   border-radius: 50%;
+}
+
+.nav-1 {
+   background-color: #ffffff;
+}
+
+.nav-2 {
+   background-color: #4a8fd0;
+}
+
+.nav-3 {
+   background-color: #4a8fd0;
+}

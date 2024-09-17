@@ -1,0 +1,268 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.body {
+   width: 100%;
+   height: 100vh;
+   background-color: rgb(197, 197, 197);
+   position: relative;
+   font-family: 'Roboto', sans-serif;
+}
+
+.corners {
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+
+.red {
+   width: 260px;
+   height: 260px;
+   background-color: rgb(192, 0, 0);
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+.yellow {
+   width: 260px;
+   height: 260px;
+   background-color: rgb(226, 181, 5);
+   position: absolute;
+   bottom: 0;
+   left: 0;
+}
+
+.section {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   justify-content: center;
+   align-items: center;
+}
+
+.content-login {
+   width: 99%;
+   height: 99vh;
+   display: flex;
+   flex-direction: row;
+   font-family: Arial, sans-serif;
+}
+
+.section-1 {
+   width: 60%;
+   height: 100%;
+   background: linear-gradient(to bottom left, #25a99e, #25ac64);
+   display: flex;
+   position: relative;
+   border-radius: 20px 0 0 20px;
+   overflow: hidden;
+   flex-direction: column;
+}
+
+
+.logo img {
+   margin: 20px;
+   width: 60px;
+}
+
+.logo {
+   width: 100%;
+   height: 100px;
+   display: flex;
+   align-items: center;
+}
+
+.title-logo {
+   color: #fbfdff;
+}
+
+.info-welcome {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+   margin-bottom: 200px;
+}
+
+.title-section {
+   font-size: 44px;
+   font-weight: bold;
+   color: #fbfdff;
+}
+
+.p-welcome {
+   text-align: center;
+   color: #fbfdff;
+   font-size: 20px;
+}
+
+.btn-1 {
+   color: #fbfdff;
+   text-transform: uppercase;
+   border: 2px solid #fbfdff;
+   padding: 15px 80px;
+   border-radius: 30px;
+   cursor: pointer;
+}
+
+.btn-1:hover {
+   background-color: rgb(109, 197, 169, 0.8);
+}
+
+.circle {
+   width: 450px;
+   height: 450px;
+   background-color: rgb(109, 197, 169, 0.3);
+   border-radius: 50%;
+   position: absolute;
+   bottom: -190px;
+   left: -190px;
+}
+
+.cuadro {
+   width: 40px;
+   height: 40px;
+   background-color: rgb(109, 197, 169, 0.3);
+   top: 60px;
+   right: 100px;
+   position: absolute;
+   transform: rotate(45deg);
+}
+
+
+.rectangulo {
+   width: 30px;
+   height: 60px;
+   background-color: rgb(109, 197, 169, 0.3);
+   bottom: 60px;
+   right: 100px;
+   position: absolute;
+   transform: rotate(145deg);
+}
+
+.triangulo {
+   width: 0;
+   height: 0;
+   border-top: 50px solid transparent;
+   border-bottom: 50px solid transparent;
+   border-right: 150px solid rgb(109, 197, 169, 0.3);
+   position: absolute;
+   left: 420px;
+   top: 50%;
+   transform: rotate(-30deg);
+}
+
+.section-2 {
+   width: 100%;
+   height: 100%;
+   background-color: #fbfdff;
+   position: relative;
+   border-radius: 0 20px 20px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   /* Añade un poco de padding para que el contenido no quede pegado a los bordes */
+}
+
+.info-account {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+
+.title-account {
+   font-size: 34px;
+   font-weight: bold;
+   color: #25a99e;
+}
+
+.iconos {
+   display: flex;
+   gap: 20px;
+}
+
+.icon {
+   width: 50px;
+   height: 50px;
+   background-color: #ffffff;
+   border-radius: 50%;
+   border: 1px solid #aeaeae;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.icon:hover {
+   background-color: #f0f0f0;
+   /* Cambia el color de fondo al pasar el ratón por encima */
+   border-color: #888;
+   /* Cambia el color del borde al pasar el ratón por encima */
+}
+
+.icon i {
+   font-size: 20px;
+}
+
+.p-account {
+   color: #aeaeae;
+}
+
+.inputs {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.input-icon {
+   position: relative;
+   width: 400px;
+}
+
+.input-icon i {
+   position: absolute;
+   left: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   color: #888;
+}
+
+.input-icon input {
+   width: 100%;
+   height: 50px;
+   font-size: 18px;
+   outline: none;
+   border: none;
+   background-color: rgba(210, 210, 210, 0.3);
+   padding-left: 40px;
+   border-radius: 5px;
+}
+
+.btn-2 {
+   background-color: #25a99e;
+   padding: 15px 80px;
+   border-radius: 30px;
+   cursor: pointer;
+   color: #fbfdff;
+   text-align: center;
+   font-size: 18px;
+   transition: background-color 0.3s ease;
+}
+
+.btn-2:hover {
+   background-color: rgba(30, 122, 93, 0.7);
+}
