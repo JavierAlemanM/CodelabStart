@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #383c54;
+    width: 100%;
+    height: 100vh;
+}
+
+.circle {
+    position: fixed;
+    border: 100px solid #28303b93;
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+}
+
+.circle1 {
+    left: -450px;
+    top: -420px;
+}
+
+.circle2 {
+    bottom: -400px;
+    right: -450px;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 1000px;
+    height: 600px;
+}
+
+.main .header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.main .header img {
+    width: 20px;
+    height: 20px;
+}
+
+.main .header .switche {
+    width: 30px;
+    height: 30px;
+}
+
+.main .section {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.section .content-info {
+    width: 100%;
+    height: 100vh;
+    gap: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-info .title-1 {
+    font-weight: 200;
+    font-size: 50px;
+}
+
+.content-info .title-2 {
+    font-weight: bold;
+    font-size: 52px;
+}
+
+.content-info .subtitle {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.section .content-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    gap: 20px;
+    color: white;
+    background-color: #404c64;
+    padding: 10px;
+    border-radius: 14px;
+    width: 400px;
+    height: 60px;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(216, 212, 201);
+    padding: 4px;
+    border-radius: 6px;
+}
+
+
