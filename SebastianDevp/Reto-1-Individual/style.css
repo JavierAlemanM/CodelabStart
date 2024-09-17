@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    font-family: Arial;
+    overflow: hidden;
+    
+}
+.circle {
+    position: absolute;
+    bottom: -220px; 
+    left: -220px;   
+    width: 400px;
+    height: 400px;
+    background: #ffffff1f;
+    border-radius: 50%;
+    z-index: 0; 
+}
+
+.square {
+    position: absolute;
+    top: 80px; 
+    right: 90px;
+    transform: rotate(-40deg);
+    width: 50px;
+    height: 50px;
+    background: #ffffff1f;
+    z-index: 0; 
+}
+
+
+.section1{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient( 55deg, #39b593 50%, #3bb397 50%);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #fff;
+}
+
+.section1 .header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+}
+
+.header .logo{
+    width: 30px;
+    height: 30px;
+    border: 1px solid#fff;
+}
+
+.section1 .contentSection1{
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 30px;
+}
+
+.contentSection1 .title{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.contentSection1 .description{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    font-size: 20px;
+}
+
+.section1 .button{
+    border: 1px solid #fff;
+    border-radius: 40px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 80px;
+    padding-right: 80px;
+    cursor: pointer;
+}
+
+.section2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.section2 .title{
+    font-size: 48px;
+    font-weight: 600;
+    color: #39b593;
+}
+
+.section2 .socialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socialMedia .social{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+}
+
+
+
+.section2 .subtitle{
+    color: #a9a9a9;
+}
+
+.section2 .form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form .contentInput{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentInput img {
+    position: absolute;
+    left: 250px;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+}
+
+.form input{
+    width: 450px;
+    height: 50px;
+    border: none;
+    background: #e7e7e768;
+    padding-left: 40px;
+    padding-right: 40px;
+    outline: none;
+    font-size: 16px;
+}
+
+.section2 .contentButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section2 .button{
+    background: #39b593;
+    color: #fff;
+    border-radius: 40px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 80px;
+    padding-right: 80px;
+    cursor: pointer;
+}
