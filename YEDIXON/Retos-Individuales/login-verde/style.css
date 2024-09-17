@@ -130,6 +130,39 @@
    left: -190px;
 }
 
+.cuadro {
+   width: 40px;
+   height: 40px;
+   background-color: rgb(109, 197, 169, 0.3);
+   top: 60px;
+   right: 100px;
+   position: absolute;
+   transform: rotate(45deg);
+}
+
+
+.rectangulo {
+   width: 30px;
+   height: 60px;
+   background-color: rgb(109, 197, 169, 0.3);
+   bottom: 60px;
+   right: 100px;
+   position: absolute;
+   transform: rotate(145deg);
+}
+
+.triangulo {
+   width: 0;
+   height: 0;
+   border-top: 50px solid transparent;
+   border-bottom: 50px solid transparent;
+   border-right: 150px solid rgb(109, 197, 169, 0.3);
+   position: absolute;
+   left: 420px;
+   top: 50%;
+   transform: rotate(-30deg);
+}
+
 .section-2 {
    width: 100%;
    height: 100%;
@@ -216,7 +249,6 @@
    border: none;
    background-color: rgba(210, 210, 210, 0.3);
    padding-left: 40px;
-   /* Ajusta el padding para acomodar el ícono */
    border-radius: 5px;
 }
 
