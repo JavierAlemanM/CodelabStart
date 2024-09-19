@@ -1,0 +1,265 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.body {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   position: relative;
+   justify-content: center;
+   align-items: center;
+   font-family: sans-serif;
+}
+
+.background-blue {
+   width: 57%;
+   height: 100%;
+   background-color: #7b9fc2;
+}
+
+.background-pink {
+   width: 43%;
+   height: 100%;
+   background-color: #e49cb1;
+}
+
+.content {
+   position: absolute;
+   width: 60%;
+   height: 85%;
+   background-color: transparent;
+   box-shadow: 0 0 10px 280px rgb(1, 1, 1, 0.2);
+}
+
+.section {
+   width: 100%;
+   height: 100%;
+   background-color: transparent;
+   box-shadow: 0 0 10px 0 #3c3c3c;
+   display: flex;
+   flex-direction: column;
+}
+
+.header {
+   width: 100%;
+   height: 60px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav {
+   width: 40%;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   padding: 20px;
+}
+
+.nav-item {
+   color: #fff;
+   font-size: 20px;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+
+.menu {
+   display: flex;
+   padding: 20px;
+   gap: 20px;
+}
+
+.nav-menu {
+   color: #fff;
+   font-size: 20px;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+
+.icon-search i {
+   font-size: 25px;
+   color: #fff;
+}
+
+.content-items {
+   width: 100%;
+   height: 100%;
+   display: flex;
+}
+
+.items-1 {
+   width: 35%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: start;
+   margin-left: 20px;
+   gap: 30px;
+}
+
+.title {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+}
+
+.title-1 {
+   font-size: 64px;
+   color: #fff;
+   font-weight: bold;
+   font-family: "Archivo Black", sans-serif;
+   text-shadow: 1px 1px 6px #3c3c3c;
+}
+
+.title-2 {
+   color: #fff;
+   font-size: 24px;
+   letter-spacing: 5px;
+}
+
+.content-p {
+   width: 250px;
+   height: 120px;
+   background-color: #fff;
+   padding: 25px 20px;
+   text-align: justify;
+   position: relative;
+   box-shadow: 0 0 15px 0px rgb(1, 1, 1, 0.4);
+}
+
+.btn {
+   position: absolute;
+   background-color: #e49cb1;
+   padding: 10px 20px;
+   bottom: 100px;
+   left: 200px;
+   display: flex;
+   gap: 10px;
+   color: #fff;
+   cursor: pointer;
+}
+
+.next {
+   font-weight: bold;
+   letter-spacing: 1px;
+}
+
+.numbers {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin: 20px;
+}
+
+.number-1 {
+   color: #fff;
+   font-size: 24px;
+   font-weight: bold;
+   font-family: "Archivo Black", sans-serif;
+}
+
+.line {
+   width: 100px;
+   height: 2px;
+   background-color: #fff;
+}
+
+.number-2 {
+   color: #fff;
+   font-size: 14px;
+   font-weight: bold;
+   font-family: "Archivo Black", sans-serif;
+}
+
+.items-2 {
+   width: 55%;
+   height: 100%;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.content-circle {
+   width: 400px;
+   height: 400px;
+   border-radius: 50%;
+   border: 2px solid rgb(1, 1, 1, 0.1);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 20px;
+}
+
+.circle {
+   border: 2px solid #fff;
+   border-radius: 50%;
+
+}
+
+.circle-img img {
+   width: 350px;
+   border-radius: 50%;
+   padding: 10px;
+}
+
+.arrow-1 {
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   background-color: #fff;
+   border-radius: 50%;
+   left: 190px;
+   top: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+i {
+   font-size: 12px;
+}
+
+.arrow-2 {
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   background-color: #fff;
+   border-radius: 50%;
+   left: 190px;
+   bottom: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.items-3 {
+   width: 10%;
+   height: 100%;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+}
+
+.content-icon {
+   width: 80%;
+   height: 30%;
+   background-color: #ffffff;
+}
+
+.icons {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 15px;
+   gap: 20px;
+}
+
+.icons i {
+   font-size: 24px;
+}
