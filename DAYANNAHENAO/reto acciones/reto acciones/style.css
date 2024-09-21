@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+
+}
+
+.body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.section_1{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_1 .form{
+    width: 400px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+.content_1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.brand{
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(19, 108, 192) ;
+}
+
+.content_title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title_1{
+    font-size: 32px;
+    font-weight: bold;
+}
+.title_2{
+    font-size: 16px;
+    color: gray;
+}
+.content_button{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.btn{
+    width: 100%;
+    height: 50px;
+    color: #000;
+    background-color: bisque;
+    border:2px solid beige;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+
+.btn:hover{
+    background-color: #9c2222;
+}
+
+.separator{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+   
+
+}
+.text{
+    z-index: 10;
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+.line{
+    background-color: #a2a2a2;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 8px;
+}
+.content_2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content_input{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+
+}
+.content_input input {
+    height: 46px;
+    padding-left: 8px;
+    background-color: rgb(209, 200, 200);
+    font-size: 18px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #a2a2a2;
+}
+.info_input{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.checkbox input{
+   width: 20px;
+   height: 20px;
+
+
+}
+
+
+.info_input span{
+    color: #a2a2a2;
+    font-weight: 600;
+    font-size: 14px;
+
+}
+.forgot_pass{
+    color: blue;
+}
+
+.btn_login{
+    width: 100%;
+    background-color: rgb(36, 50, 255);
+    height: 50px;
+    color: #ffffff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+}
+.create_account{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.create_account .create {
+    text-decoration: none;
+    color: blue;
+}
+
+.section_2{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
